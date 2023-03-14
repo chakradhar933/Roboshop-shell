@@ -2,7 +2,7 @@ code_dir=$(pwd)
 log_file=/tmp/roboshop.log
 rm -f ${log_file}
 echo -e "\e[31minstalling nginx\e[0m"
-yum install nginx -y &>/tmp/out &>>${log_file}
+yum install nginx -y &>>${log_file}
 #echo -e "\e[35mremove old content\e[0m"
 rm -rf /usr/share/nginx/html/* &>>${log_file}
 #echo -e "\e[31mdownload the content\e[0m"
