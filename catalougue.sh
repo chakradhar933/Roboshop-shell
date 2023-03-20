@@ -9,11 +9,14 @@ cd /app
 unzip /tmp/catalogue.zip
 cd /app
 npm install
-cp configs/catalougue.service /etc/systemd/system/catalougue.service
+cp configs/catalogue.service /etc/systemd/system/catalogue.service
+
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
+
 cp configs/mongodb.repo /etc/yum.repos.d/mongodb.repo
 yum install mongodb-org-shell -y
+
 mongo --host mongodb.perrie.cloud </app/schema/catalogue.js
 
