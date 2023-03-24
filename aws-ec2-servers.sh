@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### Change these values ###
+##### Change these values ####
 ZONE_ID="Z084482122G04GM7G6JA7"
 DOMAIN="perrie.cloud"
 SG_NAME="allow-all"
