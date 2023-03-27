@@ -22,4 +22,4 @@ systemctl enable nginx &>>${log_file}
 echo -e "\e[35mrestarting nginx\e[0m"
 systemctl restart nginx &>>${log_file}
 
-#Frontend
+#Frontend.
